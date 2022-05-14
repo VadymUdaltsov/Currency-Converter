@@ -1,0 +1,16 @@
+.div__rate {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.div__converter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div__rate p,
+.div__rate input {
+    margin: 0 15px 0 0;
+}

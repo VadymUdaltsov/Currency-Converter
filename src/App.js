@@ -6,9 +6,10 @@ function App(props) {
   return (
     <div className={s.global__div}>
       <Header newUsd={props.newUsd} newEur={props.newEur}/>
-      <Content />
+      <Content newUsd={props.newUsd} newEur={props.newEur} />
     </div>
   );
 }
+
 
 export default App;
