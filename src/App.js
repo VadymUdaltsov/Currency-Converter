@@ -1,10 +1,12 @@
-import Header from './Header/Header';
 import s from './App.module.css';
+import Header from './Header/Header';
+import Content from './Content/Content';
 
-function App() {
+function App(props) {
   return (
     <div className={s.global__div}>
-      <Header />
+      <Header newUsd={props.newUsd} newEur={props.newEur}/>
+      <Content />
     </div>
   );
 }

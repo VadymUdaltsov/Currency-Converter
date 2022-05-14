@@ -1,6 +1,7 @@
-import s from './Header.module.css'
+import s from './Header.module.css';
 
-const Header = () => {
+
+const Header = (props) => {
     return (
         <div className={s.header}>
             <img src=" https://mpng.subpng.com/20180425/oaw/kisspng-exchange-rate-foreign-exchange-market-computer-ico-5ae07ba7b55625.7169770315246611597428.jpg" alt="logo" className={s.header__logo} />
@@ -15,8 +16,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className={s.header__rate}>
-                <p>USD:</p>
-                <p>EUR:</p>
+                <p>USD:{props.newUsd} UAH</p>
+                <p>EUR:{props.newEur} UAH</p>
             </div>
             <div className={s.header__review}>
                 <p>Leave a review</p>
