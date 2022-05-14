@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.header__logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.header__nav {
+    min-width: 350px;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__rate {
+    display: flex;
+}
+
+.header__rate p:first-of-type {
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.header__review {
+    justify-content: flex-end;
+    flex-grow: 1;
+    display: flex;
+}
