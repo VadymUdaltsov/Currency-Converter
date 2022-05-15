@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .div__converter {
@@ -13,4 +14,14 @@
 .div__rate p,
 .div__rate input {
     margin: 0 15px 0 0;
+}
+
+#select_swap {
+    border: none;
+    background: transparent;
+}
+
+#select_swap img {
+    height: 20px;
+    cursor: pointer;
 }

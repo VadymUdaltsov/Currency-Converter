@@ -6,7 +6,7 @@ function App(props) {
   return (
     <div className={s.global__div}>
       <Header newUsd={props.newUsd} newEur={props.newEur}/>
-      <Content newUsd={props.newUsd} newEur={props.newEur} />
+      <Content newUsd={props.newUsd} newEur={props.newEur}/>
     </div>
   );
 }
