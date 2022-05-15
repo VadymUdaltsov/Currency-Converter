@@ -1,4 +1,6 @@
+import { NavLink } from 'react-router-dom';
 import s from './Header.module.css';
+import Review from './Review/Review';
 
 
 const Header = (props) => {
@@ -9,10 +11,10 @@ const Header = (props) => {
                 <div className={s.header__nav}>
                     <ul className={s.header__items}>
                         <li>
-                            <a href="s">Currency converter</a>
+                            <NavLink to='/converter'>Currency converter</NavLink>
                         </li>
                         <li>
-                            <a href="s">Exchange rate</a>
+                            <NavLink to='/rate'>Exchange rate</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -21,7 +23,7 @@ const Header = (props) => {
                     <p>EUR:{props.newEur} UAH</p>
                 </div>
                 <div className={s.header__review}>
-                    <p>Leave a review</p>
+                    {<NavLink to='/review'><Review /></NavLink>}
                 </div>
             </div>
         </div>

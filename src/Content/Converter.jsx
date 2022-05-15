@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import s from './Content.module.css';
-/* import Rate from './API'; */
+import Rate from './API';
+import fillValue from './API'
 
 let Converter = (props) => {
     let convert = () => {
@@ -37,8 +38,8 @@ let Converter = (props) => {
 
     }
 
-    /* 
-    Part of Code, who link with API.js and API - Exchangerate
+    
+    /* Part of Code, who link with API.js and API - Exchangerate */
 
     const getInitialState = () => {
         const from = 'UAH';
@@ -73,29 +74,29 @@ let Converter = (props) => {
 
     const handleChangeq = (e) => {
         setValue_3(e.target.value);
-    }; */
+    };
     return (
         <div className={s.div__rate}>
-            {/* <Rate  value={from} valuee={to} valueq={amount} handle={handleChangeq} /> */}
+            <Rate  value={from} valuee={to} valueq={amount} handle={handleChangeq} />
             <div className={s.div__converter}>
                 <p>Amount</p>
-                <input type="number" id='amount' defaultValue={1} /* onChange={handleChangeq} */ />
+                <input type="number" id='amount' defaultValue={1} onChange={handleChangeq} />
                 <p>From Currency</p>
-                <select name="sale" id='sale__rate' /* onChange={handleChange} onClick={handleChange} */>
+                <select name="sale" id='sale__rate' onChange={handleChange} onClick={handleChange}>
                     <option value='UAH'>UAH</option>
                     <option value='USD'>USD</option>
                     <option value='EUR'>EUR</option>
                 </select>
             </div>
-            <button id="convert" onClick={convert}>Convert</button>
+            <button id="convert" onClick={convert} /* onClick={Rate} */>Convert</button>
             <button id={s.select_swap} onClick={chaangeSelect}>
                 <img src="https://www.svgrepo.com/show/183494/sort-swap.svg" alt="swap" />
             </button>
             <div className={s.div__converter}>
                 <p>Amount</p>
-                <input type="number" id='newValue' defaultValue={1} />
+                <input type="number" id='newValue' onChange={fillValue} defaultValue={1} />
                 <p>To Currency</p>
-                <select name="buy" id='result__rate' /* onChange={handleChangee} onClick={handleChangee} */>
+                <select name="buy" id='result__rate' onChange={handleChangee} onClick={handleChangee}>
                     <option>UAH</option>
                     <option>USD</option>
                     <option>EUR</option>

@@ -1,0 +1,41 @@
+.form__container {
+    border: 1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 350px;
+    display: flex;
+}
+
+.form__container form {
+    width: 100%;
+}
+
+.form {
+    margin: 10px;
+}
+
+.form__inner {
+    display: flex;
+    height: 100%;
+}
+
+.form__data {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+}
+
+.review__block {
+    width: 100%;
+}
+
+.form__reviewTextarea {
+    width: 95%;
+    height: 250px;
+}
+
+.btn__send {
+    width: 100px;
+    float: right;
+    margin-right: 30px;
+}
