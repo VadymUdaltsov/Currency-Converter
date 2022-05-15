@@ -9,7 +9,7 @@ const ReviewContent = (props) => {
     let addPost = () => {
         let text = ReviewPost.current.value;
         let person = document.getElementById('person').value;
-        let comentBlock = document.getElementById('coment__block');
+        let comentBlock = document.getElementById('comment__block');
         comentBlock.innerHTML = 'Name:' + person + '<br>' + 'Review:' + text;
         dom.style.display = 'none';
     }
@@ -31,9 +31,10 @@ const ReviewContent = (props) => {
                             <button type='button' onClick={addPost} className={s.btn__send}>Send</button>
                         </div>
                     </div>
+                    <p>Make a screenshot of the feedback, because I don't know how to save changes to the server</p>
                 </form>
             </div>
-            <div id='coment__block' ref={dom}></div>
+            <div id='comment__block' ref={dom}></div>
         </div>
     )
 }
