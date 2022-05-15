@@ -1,4 +1,4 @@
-import Test from './Content'
+import Test from './Converter'
 
 const Rate = (props) => {
     let myHeaders = new Headers();

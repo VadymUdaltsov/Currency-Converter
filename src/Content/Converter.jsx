@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from './Content.module.css';
 /* import Rate from './API'; */
 
-let Content = (props) => {
+let Converter = (props) => {
     let convert = () => {
         let sale = document.getElementById('amount').value;
         let convertSale = document.getElementById('newValue').value;
@@ -105,4 +105,4 @@ let Content = (props) => {
     )
 }
 
-export default Content;
+export default Converter;
