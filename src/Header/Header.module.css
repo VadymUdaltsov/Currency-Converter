@@ -26,12 +26,23 @@
 }
 
 .header__rate {
-    display: flex;
+    grid-template-columns: 211px 5fr;
+    display: grid;
+    grid-template-areas: "a b c";
 }
 
 .header__rate p:first-of-type {
     margin-left: 80px;
-    margin-right: 100px;
+    grid-area: a;
+}
+
+.header__rate p:nth-child(2) {
+    margin-right: 50px;
+    grid-area: b;
+}
+
+.header__rate p:last-of-type {
+    grid-area: c;
 }
 
 .header__review {

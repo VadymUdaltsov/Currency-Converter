@@ -13,12 +13,10 @@ const Header = (props) => {
                         <li>
                             <NavLink to='/converter'>Currency converter</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/rate'>Exchange rate</NavLink>
-                        </li>
                     </ul>
                 </div>
                 <div className={s.header__rate}>
+                    <p>Exchange rate:</p>
                     <p>USD:{props.newUsd} UAH</p>
                     <p>EUR:{props.newEur} UAH</p>
                 </div>

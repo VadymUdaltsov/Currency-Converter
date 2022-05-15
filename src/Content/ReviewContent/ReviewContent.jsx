@@ -10,7 +10,6 @@ const ReviewContent = (props) => {
         let person = document.getElementById('person').value;
         let comentBlock = document.getElementById('comment__block');
         comentBlock.innerHTML = 'Name:' + person + '<br>' + 'Review:' + text;
-        dom.style.display = 'none';
     }
     return (
         <div>
@@ -33,7 +32,7 @@ const ReviewContent = (props) => {
                     <p>Make a screenshot of the feedback, because I don't know how to save changes to the server</p>
                 </form>
             </div>
-            <div id='comment__block' ref={dom}></div>
+            <div id='comment__block' className={s.comment__style}></div>
         </div>
     )
 }
