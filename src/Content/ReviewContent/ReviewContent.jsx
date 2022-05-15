@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-concat */
 import React from 'react';
-import { ReactDOM } from 'react';
 import s from './ReviewCss.module.css';
 
 const ReviewContent = (props) => {
