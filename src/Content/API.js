@@ -9,13 +9,12 @@ const Rate = (props) => {
         headers: myHeaders
     };
 
-     /* let path = `https://api.apilayer.com/fixer/convert?to=${props.to}&from=${props.from}&amount=${props.amount}`;
+     let path = `https://api.apilayer.com/fixer/convert?to=${props.to}&from=${props.from}&amount=${props.amount}`;
       let convertSale = document.getElementById('newValue');
      fetch(path, requestOptions)
         .then(response => { return response.json()})
-        .then(res => { convertSale.value = res.result});  */
+        .then(res => { convertSale.value = res.result}); 
 
-        // Uncomment this part of code if u want to see, how API works.
 }
 
 
