@@ -1,5 +1,3 @@
-import Test from './Converter'
-
 const Rate = (props) => {
     let myHeaders = new Headers();
     myHeaders.append("apikey", "wVJ6cO1yGi6SujUrTSBUMdmRxKD4CZSV");
@@ -27,7 +25,7 @@ const Rate = (props) => {
 
     fetch(path, requestOptions)
         .then(response => response.text())
-        .then(result => {<Test />})
+        .then(result => console.log(result))
         .catch(error => console.log('error', error));
 
     // fetch("https://api.apilayer.com/exchangerates_data/convert?to=props.valueefrom=props.value&amount=10", requestOptions)
