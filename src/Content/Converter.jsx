@@ -77,7 +77,7 @@ let Converter = (props) => {
     };
     return (
         <div className={s.div__rate}>
-            <Rate  value={from} valuee={to} valueq={amount} handle={handleChangeq} />
+            <Rate  from={from} to={to} amount={amount} handle={handleChangeq} />
             <div className={s.div__converter}>
                 <p>Amount</p>
                 <input type="number" id='amount' defaultValue={1} onChange={handleChangeq} />
